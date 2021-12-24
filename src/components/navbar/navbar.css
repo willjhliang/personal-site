@@ -1,0 +1,62 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.125rem 5.563rem 0rem 1.313rem;
+}
+
+.navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-initials {
+    margin-right: 0rem;
+    justify-content: flex-start;
+}
+
+.navbar-initials img {
+    width: 61px;
+    height: 46px;
+}
+
+.navbar-links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-links-container p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+
+    margin: 0 1.8rem;
+    cursor: pointer;
+}
+
+.navbar-links-container-home {
+    color: black;
+}
+
+.navbar-links-container-about {
+    color: var(--color-yellow);
+}
+
+.navbar-links-container-timeline {
+    color: var(--color-red);
+}
+
+.navbar-links-container-projects {
+    color: var(--color-blue);
+}
+
+.navbar-links-container-artwork {
+    color: var(--color-red);
+}
