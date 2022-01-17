@@ -1,0 +1,52 @@
+.artwork {
+    padding-top: 5rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-bottom: 5rem;
+}
+
+.artwork-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 66px;
+
+    margin-bottom: 2.5rem;
+}
+
+.artwork-description {
+    margin-bottom: 3.25rem;
+}
+
+.artwork-description p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 1.75rem;
+}
+
+.artwork-description ul {
+    list-style-position: inside;
+}
+
+.artwork-description li {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.artwork-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.artwork-gallery img {
+    max-width: 100%;
+}

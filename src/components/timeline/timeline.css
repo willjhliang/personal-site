@@ -1,0 +1,64 @@
+.timeline {
+    padding-top: 5rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.timeline-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 66px;
+
+    margin-bottom: 2.5rem;
+}
+
+.timeline-entry h3 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    margin-bottom: 0.313rem;
+}
+
+.timeline-entry h4 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 0.938rem;
+    color: var(--color-gray);
+}
+
+.timeline-entry {
+    margin-bottom: 1.875rem;
+}
+
+.timeline-entry ul {
+    list-style-position: inside;
+}
+
+.timeline-entry li {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.timeline-entry-org {
+    color: var(--color-red);
+}
+
+.timeline-entry-award {
+    color: var(--color-yellow);
+}
+
+.timeline-entry-misc {
+    color: var(--color-blue);
+}

@@ -3,7 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 
+    width: 100%;
+    z-index: 1;
     padding: 1.125rem 5.563rem 0rem 1.313rem;
 }
 
@@ -39,24 +42,6 @@
 
     margin: 0 1.8rem;
     cursor: pointer;
-}
 
-.navbar-links-container-home {
-    color: black;
-}
-
-.navbar-links-container-about {
-    color: var(--color-yellow);
-}
-
-.navbar-links-container-timeline {
-    color: var(--color-red);
-}
-
-.navbar-links-container-projects {
-    color: var(--color-blue);
-}
-
-.navbar-links-container-artwork {
-    color: var(--color-red);
+    color: var(--color-gray);
 }
