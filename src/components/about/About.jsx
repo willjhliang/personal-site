@@ -20,7 +20,7 @@ const About = () => {
                      I’m a student at the University of Pennsylvania pursuing a BSE in <strong>Computer Science</strong>.
                 </h2>
                 <p className="about-content-description">
-                    I hail from the cozy suburbs of Pleasanton, California. In the classic Bay Area style, my CS journey began in high school with <strong>competitive programming (USACO)</strong> and some <strong>machine learning research</strong>. Now at university, I’m hoping to expand my experience through internships and research as well as the ocassional passion project, usually something related to ML (check out my Github!). In my free time, I also enjoy traditional visual arts, design, music, and ping pong.
+                    I hail from the cozy suburbs of Pleasanton, California. Like many others, my CS journey began in high school with <strong>competitive programming (USACO)</strong> and some <strong>machine learning research</strong>. Now at university, I’m hoping to expand my experience through internships and research as well as the ocassional passion project, usually something related to ML (check out my Github!). In my free time, I also enjoy traditional visual arts, design, music, and ping pong.
                 </p>
                 <p className="about-content-changepicture">
                     By the way, here's an actual picture of me.
