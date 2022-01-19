@@ -6,7 +6,7 @@
 }
 
 body {
-    background: var(--color-bg)
+    background: var(--color-bg-1)
 }
 
 a {
@@ -14,25 +14,44 @@ a {
     text-decoration: none;
 }
 
-body {
+/* body {
     opacity: 0;
-}
+} */
  
-.fade-in {
+/* .fade-in {
     opacity: 1;
     transition: 2s opacity ease-in;
     -webkit-transition: 2s opacity ease-in;
-}
+} */
 
 
 .top-background {
+    background: linear-gradient(257.62deg, rgba(9, 187, 211, 0.24) 1.05%, rgba(255, 168, 38, 0.17) 53.26%, rgba(221, 37, 103, 0.14) 104.65%);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.top-background-curve {
     background-image: url("assets/curve1.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
+    background-position-y: 40vh;
 }
 
 .bottom-background {
-    background-image: url("assets/curve2.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
 }

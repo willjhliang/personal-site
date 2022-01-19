@@ -9,7 +9,7 @@
     -webkit-align-items: flex-end;
 
     justify-content: flex-start;
-    background-color: #000;
+    background-color: var(--color-footer);
     padding-top: 3.375rem;
     padding-bottom: 3.875rem;
     padding-left: 20rem;
@@ -34,7 +34,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
-    color: #FFF;
+    color: var(--color-gray-2);
     margin-bottom: 0.75rem;
 }
 
@@ -44,7 +44,7 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: #FFF;
+    color: var(--color-gray-2);
 }
 
 .footer-links img {

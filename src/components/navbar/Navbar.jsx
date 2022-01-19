@@ -33,11 +33,11 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <div className="navbar" style={{top: this.state.visible ? '0' : '-60px'}}>
+            <div className="navbar">
                 <div className="navbar-initials">
                     <a href="#home"><img src={initials} alt="initials" /></a>
                 </div>
-                <nav className="navbar-links">
+                <nav className="navbar-links" style={{opacity: this.state.visible ? '1' : '0'}}>
                     <ul>
                         <li className="navbar-links-about"><a href="#about">1. About</a></li>
                         <li className="navbar-links-timeline"><a href="#timeline">2. Timeline</a></li>

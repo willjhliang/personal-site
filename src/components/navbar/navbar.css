@@ -9,15 +9,6 @@
     z-index: 1;
     padding: 1.125rem 5.563rem 0rem 1.313rem;
 
-    top: 0px;
-    transition: 0.1s all ease-out;
-    -webkit-transition: 0.1s all ease-out;
-}
-
-.navbar-hidden {
-    top: -50px;
-    transition: 0.1s all ease-out;
-    -webkit-transition: 0.1s all ease-out;
 }
 
 .navbar-links {
@@ -29,9 +20,13 @@
 
     height: 1.75rem;
 
-    background: rgba(244, 244, 244, 0.8);
+    background: var(--color-bg-2);
     backdrop-filter: blur(2px);
     border-radius: 5px;
+
+    top: 0px;
+    transition: 0.3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
 }
 
 .navbar-initials {
@@ -63,19 +58,17 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 100%;
-    text-transform: capitalize;
+    color: var(--color-gray-1);
 
     width: 8rem;
     height: 100%;
     /* padding-left: 1.2rem;
     padding-right: 1.2rem; */
     cursor: pointer;
-
-    color: var(--color-gray);
 }
 
 .navbar-links li:hover {
-    background: #000000;
+    background: var(--color-gray-1);
     color: #ffffff;
     border-radius: 5px;
 

@@ -1,18 +1,32 @@
 .artwork {
     padding-top: 5rem;
+    padding-bottom: 12rem;
     padding-right: 20rem;
     padding-left: 20rem;
-    padding-bottom: 5rem;
+
+    background-color: var(--color-bg-3);
 }
 
-.artwork-title {
+.artwork-title h3 {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    line-height: 66px;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-blue);
 
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.375rem;
+}
+
+.artwork-title h2 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--color-white);
+
+    margin-bottom: 3.75rem;
 }
 
 .artwork-description {
@@ -25,6 +39,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
+    color: var(--color-gray-2);
 
     margin-bottom: 1.75rem;
 }
@@ -39,6 +54,16 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
+    color: var(--color-gray-2);
+}
+
+.artwork-description li strong {
+    transition: color 1s;
+    -webkit-transition: color 1s;
+}
+
+.artwork-description-animation li strong {
+    color: var(--color-blue);
 }
 
 .artwork-gallery {
