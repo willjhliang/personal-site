@@ -6,6 +6,7 @@
     padding-top: 4rem;
     padding-right: 20rem;
     padding-left: 20rem;
+    margin-top: 2.4rem;
 }
 
 .about p {
@@ -37,23 +38,41 @@
 
 .about-picture img {
     width: 345px;
-    height: 345px;
+    /* height: 345px; */
     margin-right: 1.375rem;
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
-.about-picture p {
-    color: var(--color-red);
+.about-picture img:hover {
+    transform: rotate(-15deg) scale(1.1);
 }
 
 .about-content-links {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
 
     margin-top: 1.188rem;
 }
 
-.about-content-links-button {
+.about-content-changepicture button {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    background: none!important;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+/* .about-content-links-button {
     flex: 1;
     width: 224px;
     min-height: 50px;
@@ -71,11 +90,114 @@
     padding-top: 0.75rem;
     padding-bottom: 0.813rem;
     padding-left: 1rem;
-}
+} */
 
-.about-content-links img {
+/* .about-content-links img {
     width: 50px;
     height: 50px;
 
     margin-left: 1.25rem;
+} */
+  
+.about-content-links-button {
+    position: relative;
+    /* margin-right: 1.25rem; */
+}
+
+.about-content-links-button a {
+    display: block;
+    /* width: 250px; */
+    height: 50px;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    white-space: nowrap;
+
+    padding-top: 0.563rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.813rem;
+    padding-right: 3rem;
+
+    color: #fff;
+    transition: all .35s;
+    -webkit-transition: all .35s;
+}
+
+.about-content-links-button a:hover {
+    background: transparent;
+}
+
+.about-content-links-button-black a {
+    background: #000000;
+    border: 3px solid #000000;
+}
+
+.about-content-links-button-black a:hover{
+    border: 3px solid #000000;
+    color: #000000;
+}
+
+.about-content-links-button-red a {
+    background: var(--color-red);
+    border: 3px solid var(--color-red);
+}
+
+.about-content-links-button-red a:hover{
+    border: 3px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.about-content-links-button-blue a {
+    background: var(--color-blue);
+    border: 3px solid var(--color-blue);
+}
+
+.about-content-links-button-blue a:hover{
+    border: 3px solid var(--color-blue);
+    color: var(--color-blue);
+}
+
+.about-content-links-button-yellow a {
+    background: var(--color-yellow);
+    border: 3px solid var(--color-yellow);
+}
+
+.about-content-links-button-yellow a:hover{
+    border: 3px solid var(--color-yellow);
+    color: var(--color-yellow);
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+        flex-direction: column;
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+    .about h2 {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .about {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-content p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }

@@ -24,3 +24,8 @@ const App = () => {
 };
 
 export default App;
+
+document.addEventListener('DOMContentLoaded',function(event){
+    // document.getElementsByClassName("App").classList.add('fade-in');
+    document.body.classList.add('fade-in');
+});

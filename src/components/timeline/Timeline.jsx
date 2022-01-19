@@ -3,7 +3,7 @@ import './timeline.css';
 
 const Timeline = () => {
     return (
-        <div className="timeline" id="timeline">
+        <section className="timeline" id="timeline">
             <div className="timeline-title">
                 <h2>Timeline</h2>
             </div>
@@ -71,9 +71,9 @@ const Timeline = () => {
             </div>
             <div className="timeline-entry">
                 <h3>Became <strong className="timeline-entry-award">Congressional Art Competition Finalist</strong></h3>
-                <h4>December 2019</h4>
+                <h4>April 2019</h4>
             </div>
-        </div>
+        </section>
     );
 };
 

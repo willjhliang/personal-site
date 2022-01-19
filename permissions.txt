@@ -1,0 +1,5 @@
+chmod a+x ~ 
+chmod a+rx html 
+chmod a+r html/index.html
+find ~/html/static -type d -exec chmod a+rx {} + 
+find ~/html/static -type f -exec chmod a+r {} +

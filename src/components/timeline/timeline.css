@@ -62,3 +62,24 @@
 .timeline-entry-misc {
     color: var(--color-blue);
 }
+
+@media screen and (max-width: 1300px) {
+    .timeline {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .timeline {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .timeline {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}

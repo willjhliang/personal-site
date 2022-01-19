@@ -10,7 +10,7 @@ import will from '../../assets/will.png';
 
 const Artwork = () => {
     return (
-        <div className="artwork" id="artwork">
+        <section className="artwork" id="artwork">
             <div className="artwork-title">
                 <h2>Artwork</h2>
             </div>
@@ -29,7 +29,7 @@ const Artwork = () => {
                 <img src={prayer} alt="prayer" />
                 <img src={will} alt="will" />
             </div>
-        </div>
+        </section>
     );
 };
 

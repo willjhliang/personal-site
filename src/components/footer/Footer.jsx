@@ -10,7 +10,7 @@ import facebook from '../../assets/facebook_footer.png';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <section className="footer">
             <div className="footer-initials">
                 <img src={initials} alt="initials" />
             </div>
@@ -21,13 +21,13 @@ const Footer = () => {
             <div className="footer-links">
                 <a href="https://www.linkedin.com/in/willjhliang/" target="_blank"><img src={linkedin} alt="linkedin" /></a>
                 <a href="https://github.com/BitLorax" target="_blank"><img src={github} alt="github" /></a>
-                <a href="" target="_blank"><img src={email} alt="email" /></a>
+                <a href="mailto:willjhliang@gmail.com" target="_blank"><img src={email} alt="email" /></a>
                 <a href="https://www.facebook.com/willjhliang/" target="_blank"><img src={facebook} alt="facebook" /></a>
             </div>
             <div className="footer-copyright">
-                <p>@Willam Jiahua Liang 2021</p>
+                <p>@William Jiahua Liang 2021</p>
             </div>
-        </div>
+        </section>
     );
 };
 

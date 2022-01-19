@@ -11,7 +11,6 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-
 }
 
 .header-content h1 {
@@ -42,12 +41,101 @@
     top: 0px;
     /* left: 255px; */
     right: 0px;
+
+    transition: all 2s;
+    -webkit-transition: all 2s;
+
+    mix-blend-mode: multiply;
+}
+
+.header-image-1 img {
+    opacity: 0;
+    transform: rotate(-20deg);
+}
+
+.header-image-2 img {
+    opacity: 0;
+    transform: rotate(20deg);
+}
+
+.header-image-1-animation img {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.header-image-2-animation img {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .header-underline img {
-    width: 139px;
+    width: 0px;
     height: 50px;
     position: absolute;
     top: 551px;
     left: 365px;
+    mix-blend-mode: multiply;
+
+    transition: all 2s;
+    -webkit-transition: all 2s;
+}
+
+.header-underline-animation img {
+    width: 139px;
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        margin-left: 0rem;
+        align-items: center;
+        flex-direction: row;
+    }
+    .header-image img {
+        width: 97vw;
+        height: auto;
+        /* width: 850px; */
+        /* height: 678px; */
+        left: 3vw;
+        right: 0vw;
+    }
+    .header-content h1 {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 96px;
+        line-height: 131px;
+
+        margin-top: 66vw;
+        /* margin-bottom: 14.313rem; */
+        margin-left: 3rem;
+        z-index: 1;
+    }
+    .header-underline img {
+        width: 0px;
+        height: 181px;
+        position: absolute;
+        top: 60vw;
+        padding-top: 131px;
+        left: 400px;
+
+        transition: all 2s;
+        -webkit-transition: all 2s;
+    }
+    .header-underline-animation img {
+        width: 139px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-image img {
+        width: 140%;
+        height: auto;
+        left: -10vw;
+    }
+    .header-content h1 {
+        width: 400px;
+    }
+    .header-underline {
+        display: none;
+    }
 }

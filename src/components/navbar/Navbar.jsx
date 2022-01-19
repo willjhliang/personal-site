@@ -1,52 +1,66 @@
-import React, { useState } from 'react';
-// import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import React, { Component } from 'react';
 import './navbar.css';
 
 import initials from '../../assets/initials.png';
 
-// const Menu = () => {
-//     <>
-//     <p><a href="#home">Home</a></p>
-//     <p><a href="#about">About</a></p>
-//     <p><a href="#timeline">Timeline</a></p>
-//     <p><a href="#projects">Projects</a></p>
-//     <p><a href="#artwork">Artwork</a></p>
-//     </>
-// }
+export default class Navbar extends Component {
+    constructor(props) {
+        super(props);
 
-const Navbar = () => {
-    // const [toggleMenu, setToggleMenu] = useState(false);
+        this.state = {
+            prevScrollpos: window.pageYOffset,
+            visible: true
+        };
+    }
 
-    return (
-        <div className="navbar">
-            <div className="navbar-initials">
-                <img src={initials} alt="initials" />
-            </div>
-            <div className="navbar-links">
-                <div className="navbar-links-container">
-                    <p className="navbar-links-container-home"><a href="#home">1. Home</a></p>
-                    <p className="navbar-links-container-about"><a href="#about">2. About</a></p>
-                    <p className="navbar-links-container-timeline"><a href="#timeline">3. Timeline</a></p>
-                    <p className="navbar-links-container-projects"><a href="#projects">4. Projects</a></p>
-                    <p className="navbar-links-container-artwork"><a href="#artwork">5. Artwork</a></p>
-                    {/* <Menu /> */}
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    }
+    handleScroll = () => {
+        const { prevScrollpos } = this.state;
+
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollpos > currentScrollPos || currentScrollPos == 0;
+
+        this.setState({
+            prevScrollpos: currentScrollPos,
+            visible
+        });
+    };
+
+    render() {
+        return (
+            <div className="navbar" style={{top: this.state.visible ? '0' : '-60px'}}>
+                <div className="navbar-initials">
+                    <a href="#home"><img src={initials} alt="initials" /></a>
                 </div>
-            </div>
-            {/* <div className="navbar-menu">
-                {toggleMenu 
-                    ? <RiCloseLine color="#000" size={27} onClick ={() => setToggleMenu(false)}/>
-                    : <RiMenu3Line color="#000" size={27} onClick ={() => setToggleMenu(true)}/>
-                }
-                {toggleMenu && (
-                    <div className="navbar-menu-container scale-up-center">
-                        <div className="navbar-menu-container-links">
-                            <Menu />
-                        </div>
-                    </div>
-                )}
-            </div> */}
-        </div>
-    );
-};
+                <nav className="navbar-links">
+                    <ul>
+                        <li className="navbar-links-about"><a href="#about">1. About</a></li>
+                        <li className="navbar-links-timeline"><a href="#timeline">2. Timeline</a></li>
+                        <li className="navbar-links-projects"><a href="#projects">3. Projects</a></li>
+                        <li className="navbar-links-artwork"><a href="#artwork">4. Artwork</a></li>
+                    </ul>
 
-export default Navbar;
+                    {/* <p className="active"><a className="navbar-links-home" href="#home">1. Home</a></p> */}
+                    {/* <p><a className="navbar-links-about" href="#about">1. About</a></p>
+                    <p><a className="navbar-links-timeline" href="#timeline">2. Timeline</a></p>
+                    <p><a className="navbar-links-projects" href="#projects">3. Projects</a></p>
+                    <p><a className="navbar-links-artwork" href="#artwork">4. Artwork</a></p>
+                    <div className="navbar-links-animation"> </div> */}
+                </nav>
+                {/* <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('p').on('click', function(){
+
+                        })
+                    })
+                </script> */}
+            </div>
+        );
+    }
+};

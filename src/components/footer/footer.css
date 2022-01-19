@@ -3,6 +3,12 @@
     position: relative;
     overflow: hidden;
     align-items: end;
+
+    -webkit-justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+
+    justify-content: flex-start;
     background-color: #000;
     padding-top: 3.375rem;
     padding-bottom: 3.875rem;
@@ -49,4 +55,38 @@
 
 .footer-copyright {
     margin-left: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-initials img {
+        margin-right: 0;
+    }
+    .footer-contact {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .footer h2, .footer p {
+        text-align: center;
+    }
+    .footer-links img {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 8rem;
+    }
+    .footer-copyright {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }
