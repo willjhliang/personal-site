@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
+import WebFont from 'webfontloader';
 
 import { About, Artwork, Footer, Header, Navbar, Projects, Timeline } from './components';
 
 import './App.css';
 import './index.css';
 
+WebFont.load({
+    google: {
+      families: ['Manrope:200,300,400,500,600,700,800', 'sans-serif']
+    }
+  });
 
 export default class App extends Component {
     constructor(props) {

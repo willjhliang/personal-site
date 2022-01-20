@@ -17,8 +17,8 @@ const Artwork = () => {
                 <h2>My dreams on canvas</h2>
             </div>
             <div className="artwork-description">
-                <p>I’m mostly a STEM guy, but I dabble in visual arts from time to time, using mediums like acrylic, oil paint, and charcoal. Here are some of the pieces of most proud of.<br></br><br></br>I prefer to leave my art’s meaning to the viewer’s interpretation, so I’ll just leave two questions that prompted this portfolio.</p>
-                <ScrollAnimation animateIn="artwork-description-animation" animateOnce={true} initiallyVisible={true}>
+                <p>I’m mostly a STEM guy, but I dabble in visual arts from time to time, using mediums like acrylic, oil paint, and charcoal. Here are some of the pieces of most proud of, and these are the two questions that prompted this portfolio.</p>
+                <ScrollAnimation animateIn="artwork-description-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
                 <ul>
                     <li>What <strong>self-imposed constructs</strong> prevent us from being happy?</li>
                     <li>Can happiness be <strong>innate</strong> or is it dependent on our surroundings?</li>

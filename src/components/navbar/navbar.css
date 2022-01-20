@@ -25,8 +25,8 @@
     border-radius: 5px;
 
     top: 0px;
-    transition: 0.3s all ease-out;
-    -webkit-transition: 0.3s all ease-out;
+    transition: 0.3s background ease-out;
+    -webkit-transition: 0.3s background ease-out;
 }
 
 .navbar-initials {
