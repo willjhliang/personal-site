@@ -18,9 +18,9 @@ const Projects = () => {
             </div>
             <div className="projects-entry">
                 <div className="projects-left-entry-description">
-                    <h3>Encoded Neuroevolution</h3>
+                    <h3 className="projects-entry-title">Encoded Neuroevolution</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p>A <strong>novel encoding method</strong>, combined with the <strong>genetic algorithm</strong>, that successfully trained a FCNN to <strong>play the game Snake</strong>. The algorithm is extremely efficient and space-efficient when compared to more common methods due to the special incorporation of vector-based encoding and decoding.</p>
+                    <p className="projects-entry-details">A <strong>novel encoding method</strong>, combined with the <strong>genetic algorithm</strong>, that successfully trained a FCNN to <strong>play the game Snake</strong>. The algorithm is extremely efficient and space-efficient when compared to more common methods due to the special incorporation of vector-based encoding and decoding.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -36,7 +36,6 @@ const Projects = () => {
                 </div>
                 </ScrollAnimation>
             </div>
-            <hr></hr>
             <div className="projects-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image">
@@ -44,9 +43,9 @@ const Projects = () => {
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
-                    <h3>Image Depth Prediction</h3>
+                    <h3 className="projects-entry-title">Image Depth Prediction</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p>A unique CNN that <strong>predicts the depth of each individual pixel</strong> in an image. It utilizes a U-shaped architecture as well as skip connections to keep track of big-picture data while still analyzing individual regions of the image.</p>
+                    <p className="projects-entry-details">A unique CNN that <strong>predicts the depth of each individual pixel</strong> in an image. It utilizes a U-shaped architecture as well as skip connections to keep track of big-picture data while still analyzing individual regions of the image.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -62,12 +61,11 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <hr></hr>
             <div className="projects-entry">
                 <div className="projects-left-entry-description">
-                    <h3>Joyspring</h3>
+                    <h3 className="projects-entry-title">Joyspring</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p>An <strong>indie platformer</strong> about the courage to let go. Led the dev team at Studio Heart Engine, developed much of the codebase as well as animations and sound effects.<br></br><br></br><strong>“On the edge of nowhere, seek the next spring anywhere.”</strong></p>
+                    <p className="projects-entry-details">An <strong>indie platformer</strong> about the courage to let go. Led the dev team at Studio Heart Engine, developed much of the codebase as well as animations and sound effects.<br></br><br></br><strong>“On the edge of nowhere, seek the next spring anywhere.”</strong></p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -88,7 +86,6 @@ const Projects = () => {
                 </div>
                 </ScrollAnimation>
             </div>
-            <hr></hr>
             <div className="projects-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image">
@@ -96,9 +93,9 @@ const Projects = () => {
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
-                    <h3>Collage Art Generation</h3>
+                    <h3 className="projects-entry-title">Collage Art Generation</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p>A BFS-based algorithm that generates <strong>abstract collage art</strong> from an input reference image. Final pieces featured in <strong>international Humanities+ Journal</strong> and won <strong>Scholastic silver key</strong> when compared against human artists.</p>
+                    <p className="projects-entry-details">A BFS-based algorithm that generates <strong>abstract collage art</strong> from an input reference image. Final pieces featured in <strong>international Humanities+ Journal</strong> and won <strong>Scholastic silver key</strong> when compared against human artists.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">

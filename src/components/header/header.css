@@ -1,8 +1,9 @@
 .header {
     display: flex;
     position: relative;
-    margin-left: 7.625rem;
     overflow: hidden;
+
+    height: 50vw;
 }
 
 .header-content {
@@ -18,93 +19,48 @@
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
-    line-height: 131px;
+    line-height: 110px;
     color: var(--color-black);
 
-    margin-top: 30.063rem;
-    margin-bottom: 14.313rem;
+    margin-top: 21.375rem;
+    margin-bottom: 2.25rem;
+    margin-left: 7.625rem;
+    width: 100%;
+
     z-index: 1;
 }
 
-/* .header-image { */
-    /* flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* top: 0px;
-    left: 0px;
-} */
+.header-content h2 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    color: var(--color-black);
+    opacity: 0;
+
+    margin-left: 7.625rem;
+    width: 40vw;
+
+    z-index: 1;
+
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
+.header-content-animation h2 {
+    opacity: 1;
+}
 
 .header-image img {
-    width: 1063px;
-    height: 848px;
+    width: 80vw;
+    height: auto;
     position: absolute;
-    top: 0px;
-    /* left: 255px; */
-    right: 0px;
+    top: 10vh;
+    left: 10vw;
+    right: 10vw;
 
-    mix-blend-mode: multiply;
     overflow: hidden;
-}
-
-.header-image-1 img {
-    opacity: 0;
-}
-
-.header-image-2 img {
-    opacity: 0;
-}
-
-.header-image-1-animation img {
-    animation: rotate1 2s ease forwards;
-}
-
-.header-image-2-animation img {
-    animation: rotate2 2s ease forwards;
-}
-
-@keyframes rotate1 {
-    0% {
-        opacity: 0;
-        transform: rotate(-20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes rotate2 {
-    0% {
-        opacity: 0;
-        transform: rotate(20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
-}
-
-.header-underline img {
-    width: 0px;
-    height: 50px;
-    position: absolute;
-    top: 551px;
-    left: 365px;
-    mix-blend-mode: multiply;
-}
-
-.header-underline-animation img {
-    animation: widen 2s ease forwards;
-}
-
-@keyframes widen {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 139px;
-    }
 }
 
 @media screen and (max-width: 1050px) {

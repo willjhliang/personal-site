@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css';
 import './artwork.css';
 
 import money from '../../assets/money.jpg';
@@ -26,12 +27,24 @@ const Artwork = () => {
                 </ScrollAnimation>
             </div>
             <div className="artwork-gallery">
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={money} alt="money" />
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={aWorldOfComparison} alt="a world of comparison" />
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={consumerism} alt="consumerism" />
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={trolley} alt="trolley" />
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={prayer} alt="prayer" />
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
                 <img src={will} alt="will" />
+                </ScrollAnimation>
             </div>
         </section>
     );

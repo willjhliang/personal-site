@@ -1,18 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap'); */
 
 :root {
-    --font-family: 'Manrope', 'sans-serif';
-
-    --color-bg-1: #FFFFFF;
-    --color-bg-2: rgba(239, 237, 255, 0.2);
-    --color-bg-3: #1E1B27;
-    --color-footer: #1E1B27;
+    --font-family: 'serif';
 
     --color-white: #FFFFFF;
-    --color-black: #362B38;
-    --color-gray-1: #81747F;
-    --color-gray-2: #CCC5D3;
-    --color-red: #DD2567;
-    --color-blue: #09BBD3;
-    --color-yellow: #FFA826;
+    --color-black: #1D1D21;
+    --color-gray: #62626A;
+    --color-blue: #4848ED;
 }

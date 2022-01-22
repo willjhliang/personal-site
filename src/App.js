@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
-import WebFont from 'webfontloader';
 
 import { About, Artwork, Footer, Header, Navbar, Projects, Timeline } from './components';
 
 import './App.css';
 import './index.css';
-
-WebFont.load({
-    google: {
-      families: ['Manrope:200,300,400,500,600,700,800', 'sans-serif']
-    }
-  });
 
 export default class App extends Component {
     constructor(props) {
@@ -34,15 +27,16 @@ export default class App extends Component {
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true}>
                 <div className="App">
                     <div className="top-background">
-                        <div className='top-background-curve'>
-                            <Navbar />
-                            <Header />
+                        <div className="animatedwrapper">
+                            <div className="dot dot--one"></div>
+                            <div className="dot dot--two"></div>
+                            <div className="dot dot--three"></div>
                         </div>
-                    </div>
-                    <About />
-                    <Timeline />
-                    <Projects />
-                    <div className="bottom-background">
+                        <Navbar />
+                        <Header />
+                        <About />
+                        <Timeline />
+                        <Projects />
                         <Artwork />
                     </div>
                     <Footer />

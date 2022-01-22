@@ -1,13 +1,12 @@
 .about {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
 
     padding-top: 4rem;
     padding-right: 20rem;
     padding-left: 20rem;
     margin-top: 2.4rem;
-    margin-bottom: 5rem;
 }
 
 .about p {
@@ -15,113 +14,43 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-1);
-
-    margin-bottom: 1.75rem;
-}
-
-.about h2 {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
-    color: var(--color-black);
-
-    margin-top: 4.375rem;
-    margin-bottom: 2.125rem;
+    line-height: 21px;
+    color: var(--color-gray);
 }
 
 .about-content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-}
 
-/* .about-content-description strong {
-    transition: color 1s;
-    -webkit-transition: color 1s;
-} */
-
-.about-content-description-animation strong {
-    animation: color-bold 1s linear forwards;
-}
-
-@keyframes color-bold {
-    100% {
-        color: var(--color-blue);
-    }
-}
-
-.about-picture img {
-    width: 345px;
-    margin-right: 1.375rem;
-
-    /* transition: transform 1s, opacity 1s;
-    -webkit-transition: transform 1s, opacity 1s; */
-
-    transform: rotate(-15deg) scale(1.1);
-    position: absolute;
-    overflow: hidden;
-}
-
-.about-picture-animation img {
-    animation: rotate 1s ease forwards;
-}
-
-/* .about-picture-animation img {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-} */
-
-@keyframes rotate {
-    100% {
-        transform: rotate(0deg) scale(1);
-    }
+    margin-bottom: 3rem;
 }
 
 .about-picture {
     position: relative;
     overflow: hidden;
-    width: 345px;
-    height: 429px;
+    width: 385px;
+    height: 435px;
+
+    margin-left: 3rem;
 }
 
-.about-picture-hover {
+.about-picture img {
+    width: 385px;
+    height: 435px;
+
     position: absolute;
-    width: 345px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-out;
+    overflow: hidden;
 }
 
-.about-picture-hover:hover {
-    opacity: 1;
-}
 
 .about-content-links {
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1.25rem;
 
-    margin-top: 1.188rem;
-}
-
-.about-content-changepicture button {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-
-    background: none!important;
-    border: none;
-    cursor: pointer;
-    color: var(--color-blue);
+    margin-top: 2rem;
 }
 
 .about-picture-popup {
@@ -131,43 +60,14 @@
     top: -22px;
 }
 
-/* .about-content-links-button {
-    flex: 1;
-    width: 224px;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFF;
-    background-color: #000;
-    border: 0px;
-    border-radius: 5px;
-    display: block;
-
-    padding-top: 0.75rem;
-    padding-bottom: 0.813rem;
-    padding-left: 1rem;
-} */
-
-/* .about-content-links img {
-    width: 50px;
-    height: 50px;
-
-    margin-left: 1.25rem;
-} */
-  
 .about-content-links-button {
     position: relative;
-    /* margin-right: 1.25rem; */
 }
 
 .about-content-links-button a {
     display: block;
     /* width: 250px; */
     height: 50px;
-    border-radius: 25px;
 
     font-family: var(--font-family);
     font-style: normal;
@@ -182,8 +82,6 @@
     padding-right: 1.5rem;
 
     color: #fff;
-    transition: all .35s;
-    -webkit-transition: all .35s;
 }
 
 .about-content-links-button a:hover {
@@ -191,8 +89,8 @@
 }
 
 .about-content-links-button-solid a {
-    background: var(--color-blue);
-    border: 3px solid var(--color-blue);
+    background: var(--color-black);
+    border: 3px solid var(--color-black);
 
     mix-blend-mode: normal;
     filter: drop-shadow(0px 0px 10px rgba(129, 116, 127, 0.3));
@@ -204,14 +102,15 @@
 }
 
 .about-content-links-button-ghost a {
-    background: var(--color-bg-1);
-    color: var(--color-blue);
-    border: 3px solid var(--color-bg-1);
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 3px solid var(--color-white);
     font-weight: bold;
 }
 
 .about-content-links-button-ghost a:hover {
     border: 3px solid var(--color-blue);
+    color: var(--color-blue);
 }
 
 @media screen and (max-width: 1300px) {

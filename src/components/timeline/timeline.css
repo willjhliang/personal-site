@@ -1,13 +1,9 @@
 .timeline {
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-right: 20rem;
     padding-left: 20rem;
-    padding-bottom: 5rem;
 
-    background-color: var(--color-bg-2);
-    background-image: url("../../assets/circle2.png");
-    background-repeat: repeat-y;
-    background-position: 70%; 
+    background: linear-gradient(var(--color-gray), var(--color-gray)) no-repeat 60%/1px 100%;
 }
 
 .timeline-title h3 {
@@ -15,8 +11,9 @@
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 27px;
-    color: var(--color-red);
+    line-height: 23px;
+    text-transform: uppercase;
+    color: var(--color-gray);
 
     margin-bottom: 0.375rem;
 }
@@ -25,8 +22,8 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 48px;
+    line-height: 55px;
     color: var(--color-black);
 
     margin-bottom: 3.75rem;
@@ -37,7 +34,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 23px;
     color: var(--color-black);
 
     margin-bottom: 0.313rem;
@@ -47,9 +44,10 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-1);
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-gray);
 
     margin-bottom: 0.938rem;
 }
@@ -67,17 +65,26 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-1);
+    line-height: 21px;
+    color: var(--color-gray);
 }
 
-.timeline-entry h3 strong, .timeline-entry li strong {
+.timeline-entry {
     transition: color 1s;
     -webkit-transition: color 1s;
 }
 
-.timeline-entry-animation h3 strong, .timeline-entry-animation li strong {
-    color: var(--color-red);
+.timeline-entry:hover .timeline-entry-title, .timeline-entry:hover .timeline-entry-date, .timeline-entry:hover .timeline-entry-details {
+    color: var(--color-blue);
+}
+
+hr {
+    padding-top: 5rem;
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+
+    margin-left: -20rem;
+    margin-right: -20rem;
 }
 
 @media screen and (max-width: 1300px) {

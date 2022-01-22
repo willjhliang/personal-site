@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background: var(--color-bg-1)
+    background: var(--color-white)
 }
 
 a {
@@ -19,6 +19,12 @@ a {
     text-decoration: none;
 }
 
+
+.top-background {
+    background: url('assets/gradient.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 /* body {
     opacity: 0;
 } */
@@ -30,7 +36,7 @@ a {
 } */
 
 
-.top-background {
+/* .top-background {
     background: linear-gradient(257.62deg, rgba(9, 187, 211, 0.24) 1.05%, rgba(255, 168, 38, 0.17) 53.26%, rgba(221, 37, 103, 0.14) 104.65%);
     background-repeat: no-repeat;
     background-size: 200% 200%;
@@ -47,14 +53,14 @@ a {
 	100% {
 		background-position: 0% 0%;
 	}
-}
+} */
 
-.top-background-curve {
+/* .top-background-curve {
     background-image: url("assets/curve1.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position-y: 40vh;
-}
+} */
 
 .bottom-background {
     background-repeat: no-repeat;
@@ -67,4 +73,85 @@ a {
 
 .section__margin {
     margin: 4rem 6rem;
+}
+
+
+
+.animatedwrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    z-index: 0;
+    width: 100%;
+    height: 2000px;
+    isolation: isolate;
+}
+
+@media only screen and (max-width: 600px) {
+    .animatedwrapper {
+        top: -500px;
+    }
+    .dot {
+        --size: 100px; 
+    }
+}
+
+
+.dot {
+    --size: 700px;
+    /* Only show the animated dots for browsers that support the required features */
+    display: none;
+    position: absolute;
+    left: calc(var(--size) / 3 * -1);
+    top: calc(var(--size) / 3 * -1);
+    width: var(--size);
+    height: var(--size);
+    mix-blend-mode: soft-light;
+    border-radius: var(--size);
+    filter: blur(calc(var(--size) / 6));
+    animation: dot-animation ease-in-out 20s infinite;
+    will-change: transform; 
+}
+
+@supports (mix-blend-mode: soft-light) and (filter: blur(1px)) {
+.animatedwrapper {
+    /* Remove the fallback background image when the features are supported */
+    background: none;
+}
+
+    .dot {
+    /* Only show the animated dots for browsers that support the required features */
+    display: block;
+}
+}
+
+.dot--one {
+    background: #FF1b14;
+}
+
+.dot--two {
+    background: #FFB000;
+    animation-delay: -7s;
+}
+
+.dot--three {
+    background: rgba(10, 6, 255, 0.7);
+    animation-delay: -14s;
+}
+
+
+@keyframes dot-animation {
+0% {
+    transform: translate(0, 0);
+}
+33% {
+    transform: translate(calc(var(--size)), 0);
+}
+66% {
+    transform: translate(0, calc(var(--size) / 1.5));
+}
+100% {
+    transform: translate(0, 0);
+}
 }

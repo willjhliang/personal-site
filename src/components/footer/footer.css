@@ -9,7 +9,7 @@
     -webkit-align-items: flex-end;
 
     justify-content: flex-start;
-    background-color: var(--color-footer);
+    background-color: var(--color-black);
     padding-top: 3.375rem;
     padding-bottom: 3.875rem;
     padding-left: 20rem;
@@ -17,8 +17,8 @@
 }
 
 .footer-initials img {
-    width: 87;
-    height: 82px;
+    width: 80px;
+    height: auto;
     margin-right: 3.375rem;
 }
 
@@ -33,8 +33,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-2);
+    line-height: 21px;
+    color: var(--color-white);
     margin-bottom: 0.75rem;
 }
 
@@ -43,14 +43,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 16px;
-    color: var(--color-gray-2);
-}
-
-.footer-links img {
-    width: 30px;
-    height: 30px;
-    margin-right: 1.25rem;
+    line-height: 14px;
+    color: var(--color-white);
 }
 
 .footer-copyright {

@@ -4,7 +4,7 @@
     padding-right: 20rem;
     padding-left: 20rem;
 
-    background-color: var(--color-bg-3);
+    background-color: var(--color-white);
 }
 
 .artwork-title h3 {
@@ -12,8 +12,9 @@
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 27px;
-    color: var(--color-blue);
+    line-height: 23px;
+    text-transform: uppercase;
+    color: var(--color-gray);
 
     margin-bottom: 0.375rem;
 }
@@ -22,9 +23,9 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    color: var(--color-white);
+    font-size: 48px;
+    line-height: 55px;
+    color: var(--color-black);
 
     margin-bottom: 3.75rem;
 }
@@ -38,8 +39,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-2);
+    line-height: 21px;
+    color: var(--color-gray);
 
     margin-bottom: 1.75rem;
 }
@@ -53,16 +54,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 25px;
-    color: var(--color-gray-2);
+    line-height: 21px;
+    color: var(--color-gray);
 }
 
-.artwork-description li strong {
-    transition: color 1s;
-    -webkit-transition: color 1s;
-}
-
-.artwork-description-animation li strong {
+.artwork-description li:hover {
     color: var(--color-blue);
 }
 
@@ -74,12 +70,13 @@
 
 .artwork-gallery img {
     max-width: 100%;
+    filter: grayscale(1);
     transition: transform 0.2s;
     -webkit-transition: transform 0.2s;
 }
 
 .artwork-gallery img:hover {
-    transform: scale(1.2);
+    filter: grayscale(0);
 }
 
 @media screen and (max-width: 1300px) {
