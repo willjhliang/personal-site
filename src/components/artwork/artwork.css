@@ -58,25 +58,30 @@
     color: var(--color-gray);
 }
 
-.artwork-description li:hover {
-    color: var(--color-blue);
+.artwork-description:hover .artwork-description-bullet {
+    color: var(--color-blue)
 }
 
 .artwork-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
 }
 
 .artwork-gallery img {
     max-width: 100%;
     filter: grayscale(1);
+    padding: 0.5rem;
     transition: transform 0.2s;
     -webkit-transition: transform 0.2s;
 }
 
 .artwork-gallery img:hover {
     filter: grayscale(0);
+    outline: var(--color-blue) solid 3px;
+}
+
+.artwork-title:hover .artwork-title-sub {
+    color: var(--color-blue);
 }
 
 @media screen and (max-width: 1300px) {

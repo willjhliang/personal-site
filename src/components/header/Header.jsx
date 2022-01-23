@@ -12,7 +12,7 @@ const Header = () => {
             <div className="header-content">
                 <h1 className="hello-text"> </h1>
                 <h2 className="description-text">
-                    I'm a student at the <strong>University of Pennsylvania</strong> pursuing a <strong>BSE in Computer Science</strong>.
+                    I'm a student at the <strong className="header-content-bold">University of Pennsylvania</strong> pursuing a <strong className="header-content-bold">BSE in Computer Science</strong>.
                 </h2>
             </div>
         </section>
@@ -23,7 +23,7 @@ export default Header;
 
 document.addEventListener('DOMContentLoaded',function(event){
     setTimeout(() => {
-        var dataText = [ "Hi, I'm <b>Will</b>"];
+        var dataText = [ "Hi, I'm <b>Will</b>."];
         
         function typeWriter(text, i, fnCallback) {
             if (i < (text.length)) {

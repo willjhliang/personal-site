@@ -6,8 +6,9 @@ import './timeline.css';
 const Timeline = () => {
     return (
         <section className="timeline" id="timeline">
+            <div className="timeline-line"></div>
             <div className="timeline-title">
-                <h3>Timeline</h3>
+                <h3 className="timeline-title-sub">Timeline</h3>
                 <h2>My past pursuits</h2>
             </div>
             <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>

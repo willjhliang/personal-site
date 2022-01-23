@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
 
-    height: 50vw;
+    height: 100vh;
 }
 
 .header-content {
@@ -25,9 +25,16 @@
     margin-top: 21.375rem;
     margin-bottom: 2.25rem;
     margin-left: 7.625rem;
-    width: 100%;
 
     z-index: 1;
+}
+
+.header-content h1:hover .header-content b {
+    color: var(--color-blue);
+}
+
+.header-content h2:hover .header-content-bold {
+    color: var(--color-blue);
 }
 
 .header-content h2 {
@@ -53,65 +60,56 @@
 }
 
 .header-image img {
-    width: 80vw;
+    width: 40vw;
     height: auto;
     position: absolute;
     top: 10vh;
-    left: 10vw;
-    right: 10vw;
+    left: 30vw;
+    right: 30vw;
 
     overflow: hidden;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1100px) {
     .header {
         margin-left: 0rem;
         align-items: center;
         flex-direction: row;
+
+        height: auto;
     }
     .header-image img {
-        width: 97vw;
         height: auto;
-        /* width: 850px; */
-        /* height: 678px; */
-        left: 3vw;
-        right: 0vw;
     }
     .header-content h1 {
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 96px;
-        line-height: 131px;
-
-        margin-top: 66vw;
-        /* margin-bottom: 14.313rem; */
+        margin-top: 50vh;
         margin-left: 3rem;
-        z-index: 1;
     }
-    .header-underline img {
-        width: 0px;
-        height: 181px;
-        position: absolute;
-        top: 60vw;
-        padding-top: 131px;
-        left: 400px;
-    }
-    .header-underline-animation img {
-        width: 139px;
+    .header-content h2 {
+        margin-left: 3rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     .header-image img {
-        width: 140%;
+        width: 60vw;
+        left: 20vw;
+        right: 20vw;
         height: auto;
-        left: -10vw;
     }
-    /* .header-content h1 { */
-        /* width: 400px; */
-    /* } */
-    .header-underline {
-        display: none;
+    .header-content h1 {
+        margin-top: 50vh;
+        margin-left: 3rem;
+
+        font-size: 72px;
+        line-height: 83px;
+    }
+    .header-content h2 {
+        margin-left: 3rem;
+
+        font-size: 24px;
+        line-height: 28px;
+
+        width: 80vw;
     }
 }

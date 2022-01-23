@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects-title">
-                <h3>Projects</h3>
+                <h3 className="projects-title-sub">Projects</h3>
                 <h2>The things I've made</h2>
             </div>
             <div className="projects-entry">
@@ -31,14 +31,14 @@ const Projects = () => {
                     </div>
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
-                <div className="projects-entry-image">
+                <div className="projects-entry-image projects-entry-left-image">
                     <img src={encodedNeuroevolution} alt="image" />
                 </div>
                 </ScrollAnimation>
             </div>
             <div className="projects-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
-                <div className="projects-entry-image">
+                <div className="projects-entry-image projects-entry-right-image">
                     <img src={imageDepthPrediction} alt="image" />
                 </div>
                 </ScrollAnimation>
@@ -81,14 +81,14 @@ const Projects = () => {
                     </div>
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
-                <div className="projects-entry-image">
+                <div className="projects-entry-image projects-entry-left-image">
                     <img src={joyspring} alt="image" />
                 </div>
                 </ScrollAnimation>
             </div>
             <div className="projects-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
-                <div className="projects-entry-image">
+                <div className="projects-entry-image projects-entry-right-image">
                     <img src={collageArtGeneration} alt="image" />
                 </div>
                 </ScrollAnimation>

@@ -38,8 +38,8 @@ export default class App extends Component {
                         <Timeline />
                         <Projects />
                         <Artwork />
+                        <Footer />
                     </div>
-                    <Footer />
                 </div>
                 </ScrollAnimation>
             );

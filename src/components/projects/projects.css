@@ -90,7 +90,7 @@
 .projects-entry-image img {
     width: 300px;
     height: 300px;
-    border-bottom: var(--color-gray) solid 1px;
+    padding: 0.5rem;
 }
 
 .projects-entry-buttons {
@@ -161,12 +161,28 @@
     color: var(--color-blue);
 }
 
-hr {
-    margin-left: -20rem;
-    margin-right: -20rem;
+.projects-entry:hover .projects-entry-title, .projects-entry:hover .projects-entry-date, .projects-entry:hover .projects-entry-details {
+    color: var(--color-blue);
 }
 
-.projects-entry:hover .projects-entry-title, .projects-entry:hover .projects-entry-date, .projects-entry:hover .projects-entry-details {
+.projects-entry-left-image img {
+    border-right: var(--color-white) solid 3px;
+}
+
+.projects-entry:hover .projects-entry-left-image img {
+    border-right: var(--color-blue) solid 3px;
+}
+
+.projects-entry-right-image img {
+    border-left: var(--color-white) solid 3px;
+}
+
+.projects-entry:hover .projects-entry-right-image img {
+    border-left: var(--color-blue) solid 3px;
+}
+
+
+.projects-title:hover .projects-title-sub {
     color: var(--color-blue);
 }
 
@@ -175,20 +191,12 @@ hr {
         padding-right: 10rem;
         padding-left: 10rem;
     }
-    hr {
-        margin-left: -10rem;
-        margin-right: -10rem;
-    }
 }
 
 @media screen and (max-width: 1050px) {
     .projects {
         padding-right: 5rem;
         padding-left: 5rem;
-    }
-    hr {
-        margin-left: -5rem;
-        margin-right: -5rem;
     }
     .projects-entry {
         flex-direction: column;
@@ -221,9 +229,5 @@ hr {
     .projects {
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-    hr {
-        margin-left: -2rem;
-        margin-right: -2rem;
     }
 }

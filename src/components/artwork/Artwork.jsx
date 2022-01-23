@@ -14,15 +14,15 @@ const Artwork = () => {
     return (
         <section className="artwork" id="artwork">
             <div className="artwork-title">
-                <h3>Artwork</h3>
+                <h3 className="artwork-title-sub">Artwork</h3>
                 <h2>My dreams on canvas</h2>
             </div>
             <div className="artwork-description">
-                <p>I’m mostly a STEM guy, but I dabble in visual arts from time to time, using mediums like acrylic, oil paint, and charcoal. Here are some of the pieces of most proud of, and these are the two questions that prompted this portfolio.</p>
+                <p className="artwork-description-intro">I’m mostly a STEM guy, but I dabble in visual arts from time to time, using mediums like acrylic, oil paint, and charcoal. Here are some of the pieces of most proud of, and these are the two questions that prompted this portfolio.</p>
                 <ScrollAnimation animateIn="artwork-description-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
                 <ul>
-                    <li>What <strong>self-imposed constructs</strong> prevent us from being happy?</li>
-                    <li>Can happiness be <strong>innate</strong> or is it dependent on our surroundings?</li>
+                    <li className="artwork-description-bullet">What <strong>self-imposed constructs</strong> prevent us from being happy?</li>
+                    <li className="artwork-description-bullet">Can happiness be <strong>innate</strong> or is it dependent on our surroundings?</li>
                 </ul>
                 </ScrollAnimation>
             </div>

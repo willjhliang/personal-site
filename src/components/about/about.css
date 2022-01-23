@@ -26,6 +26,10 @@
     margin-bottom: 3rem;
 }
 
+.about-content-description:hover .about-content-description-highlight {
+    color: var(--color-blue);
+}
+
 .about-picture {
     position: relative;
     overflow: hidden;
@@ -42,7 +46,6 @@
     position: absolute;
     overflow: hidden;
 }
-
 
 .about-content-links {
     display: flex;
@@ -128,12 +131,14 @@
         flex-direction: column;
         padding-right: 5rem;
         padding-left: 5rem;
+        align-items: center;
     }
     .about-picture {
         order: 1;
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
     .about-picture img {
-        margin-right: 0;
         width: 100%;
         height: auto;
     }
