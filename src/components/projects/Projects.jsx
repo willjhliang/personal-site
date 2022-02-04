@@ -14,13 +14,13 @@ const Projects = () => {
         <section className="projects" id="projects">
             <div className="projects-title">
                 <h3 className="projects-title-sub">Projects</h3>
-                <h2>The things I've made</h2>
+                <h2 className="projects-title-main">The things I've made</h2>
             </div>
-            <div className="projects-entry">
+            <div className="projects-entry projects-left-entry">
                 <div className="projects-left-entry-description">
                     <h3 className="projects-entry-title">Encoded Neuroevolution</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p className="projects-entry-details">A <strong>novel encoding method</strong>, combined with the <strong>genetic algorithm</strong>, that successfully trained a FCNN to <strong>play the game Snake</strong>. The algorithm is extremely efficient and space-efficient when compared to more common methods due to the special incorporation of vector-based encoding and decoding.</p>
+                    <p className="projects-entry-details">A <strong className="highlight">novel encoding method</strong>, combined with the <strong className="highlight">genetic algorithm</strong>, that successfully trained a FCNN to <strong className="highlight">play the game Snake</strong>. The algorithm is extremely efficient and space-efficient when compared to more common methods due to the special incorporation of vector-based encoding and decoding.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -32,20 +32,20 @@ const Projects = () => {
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-left-image">
-                    <img src={encodedNeuroevolution} alt="image" />
+                    <img className="projects-entry-image-image" src={encodedNeuroevolution} alt="image" />
                 </div>
                 </ScrollAnimation>
             </div>
-            <div className="projects-entry">
+            <div className="projects-entry projects-right-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-right-image">
-                    <img src={imageDepthPrediction} alt="image" />
+                    <img className="projects-entry-image-image" src={imageDepthPrediction} alt="image" />
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
                     <h3 className="projects-entry-title">Image Depth Prediction</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p className="projects-entry-details">A unique CNN that <strong>predicts the depth of each individual pixel</strong> in an image. It utilizes a U-shaped architecture as well as skip connections to keep track of big-picture data while still analyzing individual regions of the image.</p>
+                    <p className="projects-entry-details">A unique CNN that <strong className="highlight">predicts the depth of each individual pixel</strong> in an image. It utilizes a U-shaped architecture as well as skip connections to keep track of big-picture data while still analyzing individual regions of the image.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -61,11 +61,11 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className="projects-entry">
+            <div className="projects-entry projects-left-entry">
                 <div className="projects-left-entry-description">
                     <h3 className="projects-entry-title">Joyspring</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p className="projects-entry-details">An <strong>indie platformer</strong> about the courage to let go. Led the dev team at Studio Heart Engine, developed much of the codebase as well as animations and sound effects.<br></br><br></br><strong>“On the edge of nowhere, seek the next spring anywhere.”</strong></p>
+                    <p className="projects-entry-details">An <strong className="highlight">indie platformer</strong> about the courage to let go. Led the dev team at Studio Heart Engine, developed much of the codebase as well as animations and sound effects.<br></br><br></br><strong className="highlight">“On the edge of nowhere, seek the next spring anywhere.”</strong></p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
@@ -82,20 +82,20 @@ const Projects = () => {
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-left-image">
-                    <img src={joyspring} alt="image" />
+                    <img className="projects-entry-image-image" src={joyspring} alt="image" />
                 </div>
                 </ScrollAnimation>
             </div>
-            <div className="projects-entry">
+            <div className="projects-entry projects-right-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-right-image">
-                    <img src={collageArtGeneration} alt="image" />
+                    <img className="projects-entry-image-image" src={collageArtGeneration} alt="image" />
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
                     <h3 className="projects-entry-title">Collage Art Generation</h3>
                     <ScrollAnimation animateIn="projects-entry-animation" animateOnce={true} initiallyVisible={true} animatePreScroll={false}>
-                    <p className="projects-entry-details">A BFS-based algorithm that generates <strong>abstract collage art</strong> from an input reference image. Final pieces featured in <strong>international Humanities+ Journal</strong> and won <strong>Scholastic silver key</strong> when compared against human artists.</p>
+                    <p className="projects-entry-details">A BFS-based algorithm that generates <strong className="highlight">abstract collage art</strong> from an input reference image. Final pieces featured in <strong className="highlight">international Humanities+ Journal</strong> and won <strong className="highlight">Scholastic silver key</strong> when compared against human artists.</p>
                     </ScrollAnimation>
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">

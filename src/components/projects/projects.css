@@ -6,9 +6,9 @@
 }
 
 .projects-title h3 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
@@ -18,7 +18,7 @@
 }
 
 .projects-title h2 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-1);
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -38,22 +38,20 @@
 }
 
 .projects-entry h3 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
     color: var(--color-black);
 
     margin-bottom: 2.188rem;
 }
 
 .projects-entry p {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 16px;
     color: var(--color-gray);
 
     margin-bottom: 2rem;
@@ -90,7 +88,12 @@
 .projects-entry-image img {
     width: 300px;
     height: 300px;
-    padding: 0.5rem;
+    margin: 0.5rem;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
 }
 
 .projects-entry-buttons {
@@ -117,15 +120,13 @@
     /* width: 250px; */
     height: 50px;
 
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
     white-space: nowrap;
 
-    padding-top: 0.563rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.7rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
@@ -141,7 +142,7 @@
     border: 3px solid var(--color-black);
 
     mix-blend-mode: normal;
-    filter: drop-shadow(0px 0px 10px rgba(129, 116, 127, 0.3));
+    box-shadow: 0px 0px 10px var(--color-shadow);
 }
 
 .projects-entry-button-solid a:hover {
@@ -161,29 +162,21 @@
     color: var(--color-blue);
 }
 
-.projects-entry:hover .projects-entry-title, .projects-entry:hover .projects-entry-date, .projects-entry:hover .projects-entry-details {
+.projects-entry:hover .projects-entry-title, .projects-entry:hover .highlight {
     color: var(--color-blue);
 }
 
-.projects-entry-left-image img {
-    border-right: var(--color-white) solid 3px;
+.projects-entry:hover .projects-entry-image-image {
+    box-shadow: 0px 0px 10px var(--color-shadow-strong);
 }
-
-.projects-entry:hover .projects-entry-left-image img {
-    border-right: var(--color-blue) solid 3px;
-}
-
-.projects-entry-right-image img {
-    border-left: var(--color-white) solid 3px;
-}
-
-.projects-entry:hover .projects-entry-right-image img {
-    border-left: var(--color-blue) solid 3px;
-}
-
 
 .projects-title:hover .projects-title-sub {
     color: var(--color-blue);
+}
+
+.projects-title:hover .projects-title-main {
+    text-decoration: underline;
+    text-decoration-color: var(--color-blue);
 }
 
 @media screen and (max-width: 1300px) {
@@ -200,8 +193,13 @@
     }
     .projects-entry {
         flex-direction: column;
-        align-items: center;
         margin-bottom: 3.75rem;
+    }
+    .projects-left-entry {
+        align-items: flex-start;
+    }
+    .projects-right-entry {
+        align-items: flex-end;
     }
     .projects-entry-image {
         order: 1;
@@ -229,5 +227,8 @@
     .projects {
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    .projects-entry {
+        align-items: center;
     }
 }

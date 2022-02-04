@@ -35,6 +35,12 @@
 .navbar-initials img {
     width: 52px;
     height: auto;
+
+    border-top: rgba(0, 0, 0, 0) solid 3px;
+}
+
+.navbar-initials img:hover {
+    border-top: var(--color-blue) solid 3px;
 }
 
 .navbar-links ul li {
@@ -46,17 +52,17 @@
     display: block;
     height: 100%;
     width: 100%;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     padding-left: 1.2rem;
 }
 
 .navbar-links li {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 100%;
-    color: var(--color-gray);
+    color: var(--color-black);
 
     width: 8rem;
     height: 100%;

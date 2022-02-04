@@ -15,11 +15,10 @@
 }
 
 .header-content h1 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-1);
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
-    line-height: 110px;
     color: var(--color-black);
 
     margin-top: 21.375rem;
@@ -29,8 +28,9 @@
     z-index: 1;
 }
 
-.header-content h1:hover .header-content b {
-    color: var(--color-blue);
+.header-content h1:hover .underline {
+    text-decoration: underline;
+    text-decoration-color: var(--color-blue);
 }
 
 .header-content h2:hover .header-content-bold {
@@ -38,11 +38,10 @@
 }
 
 .header-content h2 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 41px;
+    font-size: 28px;
     color: var(--color-black);
     opacity: 0;
 
@@ -60,12 +59,12 @@
 }
 
 .header-image img {
-    width: 40vw;
+    width: 36vw;
     height: auto;
     position: absolute;
-    top: 10vh;
-    left: 30vw;
-    right: 30vw;
+    top: 12vh;
+    left: 32vw;
+    right: 32vw;
 
     overflow: hidden;
 }

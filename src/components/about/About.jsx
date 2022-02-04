@@ -12,7 +12,7 @@ const About = () => {
         <section className="about" id="about">
             <div className="about-content">
                 <p className="about-content-description">
-                    I hail from the cozy suburbs of Pleasanton, California. In high school, I began my CS journey with <strong>competitive programming (USACO)</strong> and some <strong>machine learning research</strong>. <span className="about-content-description-highlight">Now at university, I’m hoping to expand my experience through internships and research as well as the ocassional passion project, usually something related to ML (check out my Github!).</span> In my free time, I also enjoy traditional visual arts, design, music, and the outdoors.
+                    I hail from the cozy suburbs of Pleasanton, California. In high school, I began my CS journey with <strong className="highlight">competitive programming (USACO)</strong> and some <strong className="highlight">machine learning research</strong>. Now at university, I’m hoping to expand my experience through internships and research as well as the ocassional passion project, usually something related to ML (check out my Github!). In my free time, I also enjoy traditional visual arts, design, music, and the outdoors.
                 </p>
                 <div className="about-content-links">
                     <div className="about-content-links-button">

@@ -15,7 +15,7 @@ const Artwork = () => {
         <section className="artwork" id="artwork">
             <div className="artwork-title">
                 <h3 className="artwork-title-sub">Artwork</h3>
-                <h2>My dreams on canvas</h2>
+                <h2 className="artwork-title-main">My dreams on canvas</h2>
             </div>
             <div className="artwork-description">
                 <p className="artwork-description-intro">I’m mostly a STEM guy, but I dabble in visual arts from time to time, using mediums like acrylic, oil paint, and charcoal. Here are some of the pieces of most proud of, and these are the two questions that prompted this portfolio.</p>

@@ -1,8 +1,25 @@
+@import "https://use.typekit.net/vod1buj.css";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
+
+@font-face {
+    font-family: butler;
+    src: url("assets/Butler/Butler_Regular.otf");
+}
+
+@font-face {
+    font-family: butler;
+    font-weight: bold;
+    src: url("assets/Butler/Butler_Bold.otf");
+}
+
 :root {
-    --font-family: serif;
+    --font-family-1: butler, serif;
+    --font-family-2: 'Source Code Pro', monospace;
 
     --color-white: #FFFFFF;
     --color-black: #1D1D21;
     --color-gray: #62626A;
     --color-blue: #4848ED;
+    --color-shadow: rgba(38, 38, 42, 0.2);
+    --color-shadow-strong: rgba(38, 38, 42, 0.5);
 }

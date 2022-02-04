@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded',function(event){
                 }
             } else {
                 document.querySelector(".header-content").classList.add("header-content-animation");
+                document.querySelector("h1").innerHTML = "Hi, I'm <b class=\"underline\">Will</b>.";
             }
         }
         function StartTextAnimation(i) {

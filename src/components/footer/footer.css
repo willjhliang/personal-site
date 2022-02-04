@@ -33,17 +33,17 @@
 }
 
 .footer-contact h2 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 16px;
     line-height: 21px;
     color: var(--color-white);
     margin-bottom: 0.75rem;
 }
 
 .footer p {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -53,6 +53,13 @@
 
 .footer-copyright {
     margin-left: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
 }
 
 @media screen and (max-width: 1050px) {

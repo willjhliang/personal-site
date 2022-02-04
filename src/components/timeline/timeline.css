@@ -9,11 +9,10 @@
 }
 
 .timeline-title h3 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
-    line-height: 23px;
     text-transform: uppercase;
     color: var(--color-gray);
 
@@ -21,18 +20,17 @@
 }
 
 .timeline-title h2 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-1);
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    line-height: 55px;
     color: var(--color-black);
 
     margin-bottom: 3.75rem;
 }
 
 .timeline-entry h3 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -43,11 +41,10 @@
 }
 
 .timeline-entry h4 {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--color-gray);
 
@@ -63,11 +60,10 @@
 }
 
 .timeline-entry li {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 16px;
     color: var(--color-gray);
 }
 
@@ -82,6 +78,16 @@
 
 .timeline-title:hover .timeline-title-sub {
     color: var(--color-blue);
+}
+
+.timeline-entry:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+.timeline-title:hover .timeline-title-main {
+    text-decoration: underline;
+    text-decoration-color: var(--color-blue);
 }
 
 hr {

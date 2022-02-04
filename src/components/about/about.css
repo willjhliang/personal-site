@@ -10,11 +10,10 @@
 }
 
 .about p {
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-weight: lighter;
+    font-size: 16px;
     color: var(--color-gray);
 }
 
@@ -26,7 +25,7 @@
     margin-bottom: 3rem;
 }
 
-.about-content-description:hover .about-content-description-highlight {
+.about-content-description:hover .highlight {
     color: var(--color-blue);
 }
 
@@ -72,15 +71,13 @@
     /* width: 250px; */
     height: 50px;
 
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
     white-space: nowrap;
 
-    padding-top: 0.563rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.7rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
@@ -96,7 +93,7 @@
     border: 3px solid var(--color-black);
 
     mix-blend-mode: normal;
-    filter: drop-shadow(0px 0px 10px rgba(129, 116, 127, 0.3));
+    box-shadow: 0px 0px 10px var(--color-shadow);
 }
 
 .about-content-links-button-solid a:hover {
