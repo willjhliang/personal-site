@@ -20,6 +20,6 @@
     --color-black: #1D1D21;
     --color-gray: #62626A;
     --color-blue: #4848ED;
-    --color-shadow: rgba(38, 38, 42, 0.2);
-    --color-shadow-strong: rgba(38, 38, 42, 0.5);
+    --color-shadow: rgba(38, 38, 42, 0.1);
+    --color-shadow-strong: rgba(38, 38, 42, 0.2);
 }

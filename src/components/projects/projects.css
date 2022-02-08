@@ -12,7 +12,7 @@
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
-    color: var(--color-gray);
+    color: var(--color-blue);
 
     margin-bottom: 0.375rem;
 }
@@ -91,7 +91,7 @@
     margin: 0.5rem;
 
     border-radius: 20px;
-    box-shadow: 0px 0px 10px var(--color-shadow);
+    box-shadow: 0px 0px 20px var(--color-shadow);
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
 }
@@ -167,7 +167,7 @@
 }
 
 .projects-entry:hover .projects-entry-image-image {
-    box-shadow: 0px 0px 10px var(--color-shadow-strong);
+    box-shadow: 0px 0px 20px var(--color-shadow-strong);
 }
 
 .projects-title:hover .projects-title-sub {

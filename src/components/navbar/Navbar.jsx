@@ -37,7 +37,7 @@ export default class Navbar extends Component {
                 <div className="navbar-initials">
                     <a href="#home"><img src={initials} alt="initials" /></a>
                 </div>
-                <nav className="navbar-links" style={{opacity: this.state.visible ? '1' : '0'}}>
+                <nav className="navbar-links" style={{visibility: this.state.visible ? 'visible' : 'hidden', opacity: this.state.visible ? '1' : '0'}}>
                     <ul>
                         <li className="navbar-links-about"><a href="#about">1. About</a></li>
                         <li className="navbar-links-timeline"><a href="#timeline">2. Timeline</a></li>

@@ -78,6 +78,9 @@
         height: auto;
     }
     .header-image img {
+        width: 40vw;
+        left: 30vw;
+        right: 30vw;
         height: auto;
     }
     .header-content h1 {

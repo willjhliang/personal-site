@@ -21,10 +21,15 @@
 
     /* background: var(--color-white);
     border: var(--color-black) solid 1px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 
     top: 0px;
-    transition: 0.3s all;
-    -webkit-transition: 0.3s all;
+    transition: 0.3s opacity;
+    -webkit-transition: 0.3s opacity;
+}
+
+.navbar-links:hover {
+    border-bottom: 1px solid var(--color-gray);
 }
 
 .navbar-initials {
@@ -36,12 +41,12 @@
     width: 52px;
     height: auto;
 
-    border-top: rgba(0, 0, 0, 0) solid 3px;
+    /* border-bottom: rgba(0, 0, 0, 0) solid 1px; */
 }
 
-.navbar-initials img:hover {
-    border-top: var(--color-blue) solid 3px;
-}
+/* .navbar-initials img:hover {
+    border-bottom: var(--color-gray) solid 1px;
+} */
 
 .navbar-links ul li {
     display: inline-block;
