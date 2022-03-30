@@ -107,4 +107,9 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
+    .artwork-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
 }

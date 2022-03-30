@@ -35,7 +35,7 @@ export default class Navbar extends Component {
         return (
             <div className="navbar">
                 <div className="navbar-initials">
-                    <a href="#home"><img src={initials} alt="initials" /></a>
+                    <img src={initials} alt="initials" />
                 </div>
                 <nav className="navbar-links" style={{visibility: this.state.visible ? 'visible' : 'hidden', opacity: this.state.visible ? '1' : '0'}}>
                     <ul>

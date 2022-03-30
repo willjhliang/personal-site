@@ -231,4 +231,19 @@
     .projects-entry {
         align-items: center;
     }
+    .projects-right-entry-description .projects-entry-buttons {
+        justify-content: flex-start;
+    }
+    .projects-right-entry-description {
+        align-items: flex-start;
+        flex-direction: column;
+        height: max(300px, 100%);
+        margin-right: 0rem;
+
+        text-align: left;
+    }
+    .projects-right-entry-description a {
+        padding-left: 0.813rem;
+        padding-right: 3rem;
+    }
 }

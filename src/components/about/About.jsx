@@ -27,12 +27,7 @@ const About = () => {
                     </div>
                     <div className="about-content-links-button">
                         <div className="about-content-links-button-ghost">
-                            <a href="https://github.com/BitLorax" target="_blank" rel="noopener noreferrer"><span>Github</span></a>
-                        </div>
-                    </div>
-                    <div className="about-content-links-button">
-                        <div className="about-content-links-button-ghost">
-                            <a href="mailto:willjhliang@gmail.com" target="_blank" rel="noopener noreferrer"><span>Email</span></a>
+                            <a href="https://github.com/willjhliang" target="_blank" rel="noopener noreferrer"><span>Github</span></a>
                         </div>
                     </div>
                 </div>

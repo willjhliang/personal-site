@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
                 <h2>Contact Me</h2>
-                <p>willjhliang@gmail.com<br></br>wjhliang@seas.upenn.edu<br></br>(925) 400 - 9698</p>
+                <p>willjhliang@gmail.com<br></br>wjhliang@seas.upenn.edu</p>
             </div>
             <div className="footer-copyright">
                 <p>@William Jiahua Liang 2021</p>
