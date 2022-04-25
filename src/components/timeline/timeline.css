@@ -114,6 +114,8 @@ hr {
     .timeline {
         padding-right: 5rem;
         padding-left: 5rem;
+
+        background: none;
     }
     hr {
         margin-left: -5rem;

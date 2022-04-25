@@ -33,8 +33,8 @@
     align-items: flex-start;
     flex-direction: row;
 
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .projects-entry h3 {
@@ -191,6 +191,9 @@
         padding-right: 5rem;
         padding-left: 5rem;
     }
+}
+
+@media screen and (max-width: 850px) {
     .projects-entry {
         flex-direction: column;
         margin-bottom: 3.75rem;

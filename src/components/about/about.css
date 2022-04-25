@@ -176,4 +176,9 @@
         padding-left: 2rem;
         padding-top: 16rem;
     }
+    .about-picture {
+        width: 300px;
+        height: 400px;
+    }
+
 }
