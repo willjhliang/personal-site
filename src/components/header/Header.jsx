@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded',function(event){
         
         function typeWriter(text, i, fnCallback) {
             if (i < (text.length)) {
-                if (text.length >= 3 && text.substring(i, i + 3) == '<b>') {
+                if (text.length >= 3 && text.substring(i, i + 3) === '<b>') {
                     document.querySelector("h1").innerHTML = text.substring(0, i + 3) + '<span aria-hidden="true"></span>'
                     setTimeout(function() {
                         typeWriter(text, i + 3, fnCallback)
                     }, 100);
-                } else if (text.length >= 4 && text.substring(i, i + 4) == '</b>') {
+                } else if (text.length >= 4 && text.substring(i, i + 4) === '</b>') {
                     document.querySelector("h1").innerHTML = text.substring(0, i + 4) + '<span aria-hidden="true"></span>'
                     setTimeout(function() {
                         typeWriter(text, i + 4, fnCallback)

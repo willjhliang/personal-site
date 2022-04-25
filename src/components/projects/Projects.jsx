@@ -25,21 +25,21 @@ const Projects = () => {
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-solid">
-                                <a href="https://github.com/BitLorax/encoded-neuroevolution" target="_blank"><span>Learn <strong>more</strong></span></a>
+                                <a href="https://github.com/BitLorax/encoded-neuroevolution" target="_blank" rel="noopener noreferrer"><span>Learn <strong>more</strong></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-left-image">
-                    <img className="projects-entry-image-image" src={encodedNeuroevolution} alt="image" />
+                    <img className="projects-entry-image-image" src={encodedNeuroevolution} alt="" />
                 </div>
                 </ScrollAnimation>
             </div>
             <div className="projects-entry projects-right-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-right-image">
-                    <img className="projects-entry-image-image" src={imageDepthPrediction} alt="image" />
+                    <img className="projects-entry-image-image" src={imageDepthPrediction} alt="" />
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
@@ -50,12 +50,12 @@ const Projects = () => {
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-ghost">
-                                <a href="https://nhsjs.com/2021/monocular-depth-prediction-with-a-fully-convolutional-neural-network-and-skip-connections/" target="_blank"><span>See publication</span></a>
+                                <a href="https://nhsjs.com/2021/monocular-depth-prediction-with-a-fully-convolutional-neural-network-and-skip-connections/" target="_blank" rel="noopener noreferrer"><span>See publication</span></a>
                             </div>
                         </div>
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-solid">
-                                <a href="https://github.com/BitLorax/depth-prediction" target="_blank"><span>Learn <strong>more</strong></span></a>
+                                <a href="https://github.com/BitLorax/depth-prediction" target="_blank" rel="noopener noreferrer"><span>Learn <strong>more</strong></span></a>
                             </div>
                         </div>
                     </div>
@@ -70,26 +70,26 @@ const Projects = () => {
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-solid">
-                                <a href="https://store.steampowered.com/app/1532360/Joyspring/" target="_blank"><span>Learn <strong>more</strong></span></a>
+                                <a href="https://store.steampowered.com/app/1532360/Joyspring/" target="_blank" rel="noopener noreferrer"><span>Learn <strong>more</strong></span></a>
                             </div>
                         </div>
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-ghost">
-                                <a href="https://github.com/studio-heart-engine/joyspring" target="_blank"><span>See code</span></a>
+                                <a href="https://github.com/studio-heart-engine/joyspring" target="_blank" rel="noopener noreferrer"><span>See code</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-left-image">
-                    <img className="projects-entry-image-image" src={joyspring} alt="image" />
+                    <img className="projects-entry-image-image" src={joyspring} alt="" />
                 </div>
                 </ScrollAnimation>
             </div>
             <div className="projects-entry projects-right-entry">
                 <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className="projects-entry-image projects-entry-right-image">
-                    <img className="projects-entry-image-image" src={collageArtGeneration} alt="image" />
+                    <img className="projects-entry-image-image" src={collageArtGeneration} alt="" />
                 </div>
                 </ScrollAnimation>
                 <div className="projects-right-entry-description">
@@ -100,7 +100,7 @@ const Projects = () => {
                     <div className="projects-entry-buttons">
                         <div className="projects-entry-button">
                             <div className="projects-entry-button-solid">
-                                <a href="https://github.com/BitLorax/collage-art-generation" target="_blank"><span>Learn <strong>more</strong></span></a>
+                                <a href="https://github.com/BitLorax/collage-art-generation" target="_blank" rel="noopener noreferrer"><span>Learn <strong>more</strong></span></a>
                             </div>
                         </div>
                     </div>

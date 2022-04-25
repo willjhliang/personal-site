@@ -35,6 +35,7 @@ const About = () => {
             <ScrollAnimation animateIn="animate__animated animate__fadeIn" animateOnce={true} animatePreScroll={false} duration={0.5}>
             <div className="about-picture">
                 <img src={face} alt="face" />
+                <img src={face_alt} alt="face" className="about-picture-hover" />
             </div>
             </ScrollAnimation>
         </section>

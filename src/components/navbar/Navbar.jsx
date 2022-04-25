@@ -23,7 +23,7 @@ export default class Navbar extends Component {
         const { prevScrollpos } = this.state;
 
         const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollpos > currentScrollPos || currentScrollPos == 0;
+        const visible = prevScrollpos > currentScrollPos || currentScrollPos === 0;
 
         this.setState({
             prevScrollpos: currentScrollPos,
